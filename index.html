@@ -9,6 +9,7 @@
     <h1>Welcome to Game</h1>
     <label for="PlayerName">Player Name:</label>
     <input type="text" name="PlayerName" id="PlayerName">
+    <button onclick="saveName()">Submit</button>
     <h2>Please Choose your choice</h2>
     <label for="Rock">Rock</label>
     <input type="radio" name="choice" id="Rock" value="Rock">
@@ -17,10 +18,10 @@
     <label for="Scissor">Scissor</label>
     <input type="radio" name="choice" id="Scissor" value="Scissor">
     <button>Play</button>
-    <h2>You Choosed:</h2>
-    <h2>Computer Choosed:</h2>
+    <h2>You Choosed: <span id="player-choice"></span></h2>
+    <h2>Computer Choosed: <span id="computer-choice"></span></h2>
     <h3>Score Card</h3>
-    <table>
+    <table border="1" cellpadding="10">
         <tr>
             <th>Player</th>
             <th>Computer</th>
