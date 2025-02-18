@@ -17,20 +17,16 @@
     <input type="radio" name="choice" id="Paper" value="Paper">
     <label for="Scissor">Scissor</label>
     <input type="radio" name="choice" id="Scissor" value="Scissor">
-    <button>Play</button>
+    <button type="submit" onclick="playGame()">Play</button>
     <h2>You Choosed: <span id="player-choice"></span></h2>
     <h2>Computer Choosed: <span id="computer-choice"></span></h2>
     <h3>Score Card</h3>
-    <table border="1" cellpadding="10">
+    <table border="1" cellpadding="15" id="score-table">
         <tr>
-            <th>Player</th>
+            <th id="table-player-name">Player</th>
             <th>Computer</th>
             <th>Result</th>
-        </tr>
-        <tr>
-            <td>Rock</td>
-            <td>Scissor</td>
-            <td>Player Win</td>
+            <th>Score</th>
         </tr>
     </table>
     <h2>Winner Winner Chicken Dinner player</h2>
