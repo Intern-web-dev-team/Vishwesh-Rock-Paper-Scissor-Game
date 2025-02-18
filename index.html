@@ -4,32 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPaperScissor</title>
+    <link rel="stylesheet" href="./CSS/tanker.css">
+<link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
-    <h1>Welcome to Game</h1>
-    <label for="PlayerName">Player Name:</label>
-    <input type="text" name="PlayerName" id="PlayerName">
-    <button onclick="saveName()">Submit</button>
-    <h2>Please Choose your choice</h2>
-    <label for="Rock">Rock</label>
-    <input type="radio" name="choice" id="Rock" value="Rock">
-    <label for="Paper">Paper</label>
-    <input type="radio" name="choice" id="Paper" value="Paper">
-    <label for="Scissor">Scissor</label>
-    <input type="radio" name="choice" id="Scissor" value="Scissor">
-    <button type="submit" onclick="playGame()">Play</button>
+    <div class="welcome-heading">
+      <h1>Welcome to 🪨📃✂️ Game</h1>
+    </div>
+    <div class="player-name-input">
+      <label for="PlayerName">What should we call you...?</label>
+      <div class="input-box-allignment">
+        <input type="text" name="PlayerName" id="PlayerName" class="input-box">
+        <button onclick="saveName()" class="save-name-button">Save Name</button>
+      </div>
+    </div>
+    <div class="choosing-text">
+      <h2>Please Choose your choice</h2>
+    </div>
+    <div class="options">
+        <div class="option">
+      <label for="Rock">✊</label>
+      <input type="radio" name="choice" id="Rock" value="Rock">
+       </div>
+       <div class="option">
+      <label for="Paper">✋</label>
+      <input type="radio" name="choice" id="Paper" value="Paper">
+    </div>
+    <div class="option">
+      <label for="Scissor">✌️</label>
+      <input type="radio" name="choice" id="Scissor" value="Scissor">
+    </div>
+    </div>
+    <div class="play-button-div">
+    <button type="submit" onclick="playGame()" class="play-button">PLAY</button>
+    </div>
+    <div class="rest-code">
     <h2>You Choosed: <span id="player-choice"></span></h2>
     <h2>Computer Choosed: <span id="computer-choice"></span></h2>
-    <h3>Score Card</h3>
+    <h3 class="score-card-heading">Score Card</h3>
     <table border="1" cellpadding="15" id="score-table">
         <tr>
-            <th id="table-player-name">Player</th>
-            <th>Computer</th>
-            <th>Result</th>
-            <th>Score</th>
+            <th>ROUND</th>
+            <th id="table-player-name">player name</th>
+            <th>COMPUTER</th>
+            <th>RESULT</th>
+            <th>SCORE</th>
         </tr>
     </table>
-    <h2>Winner Winner Chicken Dinner player</h2>
+    <h2 id="winner-announcement"></h2>
+</div>
     <script src="./app.js"></script>
 </body>
 </html>
